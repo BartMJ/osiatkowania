@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+.offer-con {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-text {
+    color: black;
+}
+
+.card img {
+    height: 16em;
+}
+
+#witamy {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.container {
+    background-color: rgb(255, 255, 255, 0);
+}
+
+#logo-con {
+   display: flex;
+   justify-content: center;
+}
+
+#logo-con img {
+    margin: 3em 0 3em 0;
+    width: 16vw;
+ }
+
+ .c-form textarea {
+     height: 216px;
+ }
+
+ .text-inner p {
+    color: black;
+ }
+
+ .mapa-strony li {
+     text-align: right;
+ }
+
+ .social img {
+     width: 4em;
+     padding: 2em 1em 0 0;
+ }
+
+ .kontakt h5 {
+    text-align: left;
+     margin: 0 0 0 0;
+ }
+ .kontakt p {
+    text-align: left;
+    color: black;
+}
+
+.album .card-body {
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-top {
+    position: absolute;
+    right: 12px;   
+}
+
+.social-top img {
+    width: 3em;
+    padding: 0.5em;
+}
+
+.scope {
+
+    height: 30em;
+}
+.scope p {
+    color: black;
+}
+.scope h4 {
+    margin: 2em 0 0 0;
+}
+
+
+.scope img {
+    margin: 3em 0 0 0;
+
+    width: 50%;
+}
+
+.hero-unit {
+    background-image: url('./img/IMG_20200702_152828.jpg');
+    background-position: 25% 75%;
+    min-height: 720px;
+    background-size: cover;
+    
+}
+.hero-unit h1, p {
+    color: white;
+    position: relative;
+   
+}
+.hero-unit h1 {
+    margin-top: 2.5em;
+    text-align: right;
+   
+}
+.prices {
+    background-color: #eee
+}
+
+.hero-unit .btn {
+    opacity: 0.8;
+
+}
+
+.hero-back {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.7;
+    position: relative;
+    top: 1em;
+}
+
+.hero-back p {
+    margin: 1em;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.album p {
+    color: black;
+}
+
+.navbar-nav a {
+    font-size: 14px;
+}
+#pricing {
+    margin-top: 1em;
+}
+
+#koto img {
+   width: 440px;
+}
+
+.gwarancja {
+    background-color: blue;
+}
+
+.five-stars img {
+    height: 1em;;
+}
+
+.card {
+    margin-bottom: 1.5em;
+}
+
+.bg-light {
+    background-image: url('./img/tiny_grid/tiny_grid.png');
+}
+.opinions {
+    margin: 0.5em 0 0.5em 0;
+}
+.opinions p {
+    font-size: 16px;
+}
+
+
+  
+/* Mini gallery */
+
+.mini-gallery img {
+    width: 100%;
+    opacity: 0.9;
+}
+.mini-gallery img:hover {
+    opacity: 1;
+}
+.mini-gallery h1 {
+    margin: 1em 0 0.5em 0;
+}
+
+.button-con {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.button-con button {
+    font-size: 14px;
+}
