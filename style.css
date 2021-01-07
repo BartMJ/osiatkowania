@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
   }
   
   /* Style inputs */
@@ -69,10 +70,6 @@ body {
     color: black;
 }
 
-.card img {
-    height: 16em;
-}
-
 #witamy {
     font-weight: 600;
     font-size: 18px;
@@ -89,7 +86,7 @@ body {
 
 #logo-con img {
     margin: 3em 0 3em 0;
-    width: 16vw;
+
  }
 
  .c-form textarea {
@@ -119,9 +116,10 @@ body {
 }
 
 .album .card-body {
-    height: 10em;
+    height: 12em;
     display: flex;
     flex-wrap: wrap;
+    font-style: italic;
 }
 
 .social-top {
@@ -198,12 +196,10 @@ body {
 .navbar-nav a {
     font-size: 14px;
 }
-#pricing {
-    margin-top: 1em;
-}
 
 #koto img {
-   width: 440px;
+   width: 420px;
+   display: none;
 }
 
 .gwarancja {
@@ -211,7 +207,7 @@ body {
 }
 
 .five-stars img {
-    height: 1em;;
+    height: 1em;
 }
 
 .card {
@@ -252,3 +248,67 @@ body {
 .button-con button {
     font-size: 14px;
 }
+#zasieg {
+    padding: 1em 0 0 0;
+}
+#zasieg p {
+    color: black;
+}
+#mapa-wwa {
+    width: 100%;
+  
+}
+#mapa-wwa img {
+    width: 75%;
+    padding: 2em 0 2em 0;
+}
+#zasieg-pl {
+    height: auto;
+}
+
+#zasieg-pl h3 {
+    padding: 4em 0 0.5em 0;
+    text-align: right;
+}
+
+#zasieg-pl p {
+    text-indent: 25px;
+}
+ 
+#zasieg-pl img {
+    width: 100%;
+    opacity: 10%;
+    position: absolute;
+    margin: auto;
+}
+
+@media (max-width: 766px) {
+    #zasieg-pl img {
+        display: none;
+    }
+    #zasieg-pl h3 {
+        padding: 0 0 0.5em 0;
+        margin: 0 0 0 0;
+    }
+    .c-form {
+        margin: 2em 0 0 0;
+    }
+  }
+  
+  /* Kontakt */
+
+  #contact {
+    margin: 1em auto 2em auto;
+  }
+
+  #realizacje img {
+      margin: 0 0 1em 0;
+  }
+
+  #submit {
+      margin-top: 1em;
+  }
+
+  #pricing-cards .card {
+      min-height: 16em;
+  }
