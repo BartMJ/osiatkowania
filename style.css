@@ -10,7 +10,8 @@ footer {
     background-color: rgb(0, 0, 0, 0.5);
 }
 .mid-back {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: -2;
 }
 * {
     box-sizing: border-box;
@@ -335,7 +336,7 @@ footer {
     
   }
 #about {
-    margin: 2em 0 4em 0;
+    margin: 2em 0 1em 0;
 }
   #about p {
       color: black;
