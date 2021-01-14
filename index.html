@@ -10,18 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
 </head>
 <body>
+   <div id="para" style="height: 1350px;"></div>
     <div id="logo-con">
       <img src="./img/logo_osiatkowania.png" alt="">
     </div>
     <!-- Navigation start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light ">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Strona startowa</a>
+            <a class="nav-link" href="index.html">Strona startowa</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#realizacje">Nasze realizacje</a>
@@ -30,7 +31,7 @@
             <a class="nav-link" href="gallery.html">Galeria</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#pricing">Cennik</a>
+            <a class="nav-link" href="cennik.html#pricing">Cennik</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#zasieg">Zasięg działania</a>
@@ -51,27 +52,125 @@
       <div class="hero-unit">
         <div class="container">
           <h1>Osiatkowania.pl</h1>
-
         </div>
         <div class="hero-back">
           <div class="container">
             <p>
                 Witamy na stronie firmy zajmującej się zabezpieczeniami balkonów i okien.<br>
-                Jesteśmy grupą osób wywodzących się ze środowisk klubów wysokogórskich, nasze pasje wdrażamy w życie łącząc przyjemne z pożytecznym.
-                Oferujemy profesjonalną instalację wytrzymałych siatek w dobrych cenach! 
             </p>
           </div>
         </div>
       </div>
 
+<!-- O nas -->
+<div id="about">
+  <div class="container">
+    <h2>O firmie</h2>
+    <div class="row">
 
+      <div class="j-text col-lg-9 col-md-12">
+        <p>Jesteśmy grupą osób wywodzących się ze środowisk klubów wysokogórskich, nasze pasje wdrażamy w życie łącząc przyjemne z pożytecznym.
+          Oferujemy profesjonalną instalację wytrzymałych siatek zabezpieczających na balkonach, tarasach oraz oknach.</p>
+          <br>
+        <p>Jesteśmy grupą osób wywodzących się ze środowisk klubów wysokogórskich, nasze pasje wdrażamy w życie łącząc przyjemne z pożytecznym.
+          Oferujemy profesjonalną instalację wytrzymałych siatek zabezpieczających na balkonach, tarasach oraz oknach.</p>
+      </div>
+
+      <div id="kot" class="col-lg-3 offset-lg-0 col-md-4 offset-md-4 col-sm-6">
+        <img src="./img/kot_i_golob.png" alt="">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- O nas -->
+
+
+<!-- Przykładowe realizacje start -->
+<div class="mid-back">
+  <div id="realizacje" class="mini-gallery container">
+
+      <h2>Przykładowe realizacje</h2>
+      <p>Zobacz galerię wykonanych przez nas siatek zabezpieczających.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="./img/mini_galeria/IMG_20200702_152828.jpg" alt="">
+      </div>
+      <div class="col-md-4">
+        <img src="./img/mini_galeria/IMG_20200730_124242.jpg" alt="">
+      </div>
+      <div class="col-md-4">
+        <img src="./img/mini_galeria/IMG_20200724_175116_1.jpg" alt="">
+      </div>
+
+    </div>
+
+      <div class="button-con">
+        <button type="button" class="btn btn-sm btn-outline-success">Zobacz galerię</button>
+      </div>
+
+  </div>
+  <!-- Przykładowe realizacje end -->
+</div>
+  <!--Zasięg start-->
+  <div id="zasieg" class="">
+      <div class="container ">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <h2>Zasięg działania</h2>
+              <p style="color: black">Dojazd na terenie Warszawy wliczamy gratis.</p>
+              <div id="mapa-wwa">
+                  <img src="./img/ludek_wwa.PNG" alt="" >
+              </div>
+            </div>
+            <div id="zasieg-pl" class="col-md-6 col-sm-12">
+              <img src="./img/Polska_img.png" alt="">
+              <h3>Zlecenia na terenie Polski</h3>
+                  <p>Podejmujemy się pracy również w przypadku innych rejonów Polski. Aby sprawdzić czy, któryś z naszych pracowników znajduje się w Państwa okolicy, prosimy o krótkie zapytanie.</p>
+            </div>
+          </div>
+      </div>
+  </div>
+
+<!--Zasięg end-->
+
+<!--Kontakt-->
+<div id="contact" class="container">
+  <div style="text-align:center">
+    <h2>Skontaktuj się z nami</h2>
+    <p style="color: black;">Wyślij zapytanie, a my przedstawimy ofertę.</p>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <img src="./img/kadr.jpg" style="width: 100%; padding-top: 1em">
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <div class="c-form">
+        <form action="/action_page.php">
+          <label for="fname">Imię</label>
+          <input type="text" id="fname" name="firstname" placeholder="Imię..">
+          <label for="lname">E-mail</label>
+          <input type="text" id="lname" name="lastname" placeholder="E-mail..">
+          <label for="subject">Wiadomość</label>
+          <textarea id="subject" name="subject" placeholder="Treść zapytania.."></textarea>
+          <input id="submit" class="btn" type="submit" value="Wyślij zapytanie">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Kontakt-->
   <!-- Opinnie klientów -->
-  <div class="album py-5 bg-light"><!--album py-5 bg-light-->
+  <div class="album "><!--album py-5 -->
     <div class="container"><!--container-->
+ 
       <div class="opinions">
-        <h1>Opinie klientów</h1>
+        <h4>Opinie klientów</h4>
         <p>Zapoznaj się z niektórymi opiniami jakie usłyszeliśmy od naszych klientów!</p>
       </div>
+
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3">
         <div class="col">
           <div class="card shadow-sm">
@@ -154,162 +253,9 @@
       </div>
     </div><!--container-->
 
-  </div><!--album py-5 bg-light-->
-
-  <!-- Przykładowe realizacje start -->
-  <div id="realizacje" class="mini-gallery container">
-    <h1>Przykładowe realizacje</h1>
-    <div class="row">
-      <div class="col-md-4">
-        <img src="./img/mini_galeria/IMG_20200702_152828.jpg" alt="">
-      </div>
-      <div class="col-md-4">
-        <img src="./img/mini_galeria/IMG_20200730_124242.jpg" alt="">
-      </div>
-      <div class="col-md-4">
-        <img src="./img/mini_galeria/IMG_20200724_175116_1.jpg" alt="">
-      </div>
-
-    </div>
-
-      <div class="button-con">
-        <button type="button" class="btn btn-sm btn-outline-success">Zobacz galerię</button>
-      </div>
-
-  </div>
-
-  <!-- Przykładowe realizacje end -->
-  <div id="pricing" class="container"><!--container-->
-    <div class="row">
-      <div class="col-md-8 col-sm-12">
-        <div class="text-inner">
-        <h1>Cennik</h1>
-        <p style="text-align: justify;">
-        Z uwagi na to, iż każdy balkon jest inny, w każdym przypadku 
-        trzeba podejść do montażu i wyceny indywidualnie, dlatego też bez wcześniejszych 
-        oględzin trudno oszacować ostateczny koszt montażu.<br />Głównymi czynnikiami na których opiera się wycena są:
-        <br /><br />metraż powierzchni, którą należy osiatkować</span><span class="ff1 cf3 fs24"> </span><span class="ff2 cf3 fs24">*</span><span class="ff1 cf3 fs24"><br />-<wbr> rodzaj siatki jaki zażyczy </span><span class="ff2 cf3 fs24">sobie</span><span class="ff1 cf3 fs24"> </span><span class="ff2 cf3 fs24">klient</span><span class="ff1 cf3 fs24">(do wyboru siatka polietylenowa, lub stalowa)<br />-<wbr> konieczność stworzenia dodatkowej konstrukcji nośnej pod siatkę(z reguły przy siatce stalowej<br> należy stworzyć ramę nośną)<br /></span></p><p style="text-align: left;"><span class="ff2 cf3 fs24">-<wbr> dodatkowych usług, np. </span><span class="ff1 cf3 fs24">zamontowa</span><span class="ff2 cf3 fs24">nia półki dla kota na balkonie</span><span class="ff1 cf3 fs24"><br /></span></p><p style="text-align: justify;">
-        <h3>Orientacyjny koszt przedstawia się następująco:</h3>
-        </div>
-      </div>
-      <div id="koto" class="col-md-4 col-sm-12">
-          <!-- <img src="./img/koto.png" alt=""> -->
-      </div>
-    </div>
-  </div>
-
-    <!-- Ceny --><!-- Ceny --><!-- Ceny --><!-- Ceny --><!-- Ceny --><!-- Ceny --><!-- Ceny -->
-    <div id="pricing-cards" class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-4">
-              <div class="card">
-                <div class="card-header">
-                  <h4 class="my-0 font-weight-normal">Bezpłatnie</h4>
-                </div>
-                <div class="card-body">
-                  <h3 >0 zł</h3>
-                  <ul class="list-unstyled mt-3 ">
-                    <li>Oględziny u klienta.</li>
-                    <li>Stworzenie dokładnej wyceny.</li>
-                    <li><br></li>
-                  </ul>
-                </div>
-              </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-              <div class="card">
-                <div class="card-header">
-                  <h4 class="my-0 font-weight-normal">Siatka polietylenowa</h4>
-                </div>
-                <div class="card-body">
-                  <h3 class="pricing-card-title">100-150zł </h3>
-                  <ul class="list-unstyled mt-3 ">
-                    <li>Poniżej 5m do 150zł za m².</li>
-                    <li>5-10 m 100 zł za m²</li>
-                    <li>Pow 10m - możliwość negocjacji.</li>
-                  </ul>
-                </div>
-              </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-              <div class="card">
-                <div class="card-header">
-                  <h4 class="my-0 font-weight-normal">Siatka stalowa</h4>
-                </div>
-                <div class="card-body">
-                  <h3 >150-200 zł za m² </h3>
-                  <ul class="list-unstyled mt-3 ">
-                    <li>W cenie montaż specjalnej ramy.</li>
-                    <li>W przypadku małych pow. 200-250 zł za m².</li>
-
-                  </ul>
-
-              </div>
-              </div>
-          </div>
-        </div>
-    </div>
-    <!-- Ceny --><!-- Ceny --><!-- Ceny --><!-- Ceny --><!-- Ceny --><!-- Ceny --><!-- Ceny -->
-    <div class="container"><!--container-->
-      <div class="text-inner">
-
-      <p>Cena m² uwzględnia wszystkie możliwe koszta(dojazdu, materiałów, samej usługi wykonania montażu, itp.).</p>
-      <p>
-        * metraż kwadratowy powierzchni do osiatkowanai obliczamy następująco:  (długość balkonu   +   dodatkowe boki)  x   wysokość   =   ... m²
-      </p>
-      <!-- <div class="gwarancja">
-          <p>Gwarancja za wykonaną usługę dotyczy jedynie systemu nośnego pod siatkę i wynosi 1 rok od daty wykonania usługi. Trwałość siatki polietylenowej w zależności od warunków pogodowych(głównie ma to związek z nasłonecznieniem danego miejsca) wynosi 3-4 lata, po tym okresie tworzywo parcieje na tyle, że niewielka ingerencja jest w stanie siatkę rozwerwać - dotyczy to głównie montaży pod kątem kotów, w przypadku gołębi siatka może powisieć nawet 5 lat. Po upływie tego czasu siatka nadaje się do wymiany. Sama wymiana siatki na nową to 1/3 kwoty pierwotnego kosztu osiatkowania.</p>
-      </div> -->
-      </div>
-  </div>
-<!--Zasięg start-->
-<div id="zasieg" class="bg-light">
-    <div class="container bg-light">
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <h1>Zasięg działania</h1>
-            <p style="color: black">Dojazd na terenie Warszawy wliczamy gratis.</p>
-            <div id="mapa-wwa">
-                <img src="./img/Warszawa_outline_with_districts_v2.png" alt="" >
-            </div>
-          </div>
-          <div id="zasieg-pl" class="col-md-6 col-sm-12">
-            <img src="./img/Polska_kontur_bialy.png" alt="">
-            <h3>Działania na terenie Polski</h3>
-                <p>W przypadku innych rejonów Polski czasami podejmujemy się pracy. Aby sprawdzić czy, któryś z naszych pracowników znajduje się w Państwa okolicy, prosimy o krótkie zapytanie.</p>
-          </div>
-        </div>
-    </div>
-</div>
-<!--Zasięg end-->
-<!--Kontakt-->
-<div id="contact" class="container">
-  <div style="text-align:center">
-    <h2>Skontaktuj się z nami</h2>
-    <p style="color: black;">Wyślij zapytanie, a my przedstawimy ofertę.</p>
-  </div>
-  <div class="row">
-    <div class="col-md-6 col-sm-12">
-      <img src="./img/kadr.jpg" style="width: 100%; padding-top: 1em">
-    </div>
-    <div class="col-md-6 col-sm-12">
-      <div class="c-form">
-        <form action="/action_page.php">
-          <label for="fname">Imię</label>
-          <input type="text" id="fname" name="firstname" placeholder="Imię..">
-          <label for="lname">E-mail</label>
-          <input type="text" id="lname" name="lastname" placeholder="E-mail..">
-          <label for="subject">Wiadomość</label>
-          <textarea id="subject" name="subject" placeholder="Treść zapytania.."></textarea>
-          <input id="submit" class="btn" type="submit" value="Wyślij zapytanie">
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-<!--Kontakt-->
+  </div><!--album py-5 -->
 <!-- Footer -->
-<footer class="bg-light text-center text-lg-start">
+<footer class="text-center text-lg-start">
   <!-- Grid container -->
   <div class="container p-4">
     <!--Grid row-->
@@ -350,7 +296,7 @@
             <a href="#zasieg" class="text-dark">Zasięg działania</a>
           </li>
           <li>
-            <a href="#pricing" class="text-dark">Cennik</a>
+            <a href="#cennik.html" class="text-dark">Cennik</a>
           </li>
           <li>
             <a href="#!" class="text-dark">FAQ</a>
@@ -373,15 +319,19 @@
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+  <div id="cr" class="text-center p-3">
     © 2020 Copyright:
     <a class="text-dark" href="">Osiatkowania.pl</a>
   </div>
   <!-- Copyright -->
 </footer>
+
 <!-- Footer -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
 </body>
 </html>
+
+<!-- Lina -->

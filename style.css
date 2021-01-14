@@ -1,8 +1,18 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-  }
   
-  * {
+}
+footer {
+    background-color: rgb(238, 238, 238)
+}
+
+#cr {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.mid-back {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -32,11 +42,7 @@ body {
   }
   
   /* Style the container/contact section */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 10px;
-  }
+
   
   /* Create two columns that float next to eachother */
   .column {
@@ -197,10 +203,6 @@ body {
     font-size: 14px;
 }
 
-#koto img {
-   width: 420px;
-   display: none;
-}
 
 .gwarancja {
     background-color: blue;
@@ -214,9 +216,6 @@ body {
     margin-bottom: 1.5em;
 }
 
-.bg-light {
-    background-image: url('./img/tiny_grid/tiny_grid.png');
-}
 .opinions {
     margin: 0.5em 0 0.5em 0;
 }
@@ -258,21 +257,18 @@ body {
     width: 100%;
   
 }
-#mapa-wwa img {
-    width: 75%;
-    padding: 2em 0 2em 0;
-}
+
 #zasieg-pl {
     height: auto;
 }
 
 #zasieg-pl h3 {
-    padding: 4em 0 0.5em 0;
+    padding: 1em 0 0.5em 0;
     text-align: right;
 }
 
 #zasieg-pl p {
-    text-indent: 25px;
+    text-indent: 36px;
 }
  
 #zasieg-pl img {
@@ -280,18 +276,29 @@ body {
     opacity: 10%;
     position: absolute;
     margin: auto;
+    padding: 4em 8em 3em 8em;
 }
 
-@media (max-width: 766px) {
+#mapa-wwa img {
+    width: 75%;
+    padding: 2em 0 2em 0;
+}
+@media (max-width: 1100px) {
     #zasieg-pl img {
         display: none;
     }
+}
+@media (max-width: 766px) {
+
     #zasieg-pl h3 {
         padding: 0 0 0.5em 0;
         margin: 0 0 0 0;
     }
     .c-form {
         margin: 2em 0 0 0;
+    }
+    .mini-gallery {
+        opacity: 1;
     }
   }
   
@@ -300,7 +307,9 @@ body {
   #contact {
     margin: 1em auto 2em auto;
   }
-
+#realizacje {
+    padding: 2.5em 0 3em 0;
+}
   #realizacje img {
       margin: 0 0 1em 0;
   }
@@ -312,3 +321,53 @@ body {
   #pricing-cards .card {
       min-height: 16em;
   }
+
+  #para {
+      background-image: url('./img/tiny_grid/tiny_grid.png');
+      z-index: -1;
+      width: 100vw;
+      position: absolute;
+  }
+.container {
+    
+    padding: 10px;
+
+    
+  }
+#about {
+    margin: 1em 0 4em 0;
+}
+  #about p {
+      color: black;
+      text-indent: 36px;
+  }
+#ludek img {
+    width: 100%;
+    padding: 1em;
+}
+@media (max-width: 768px) {
+    #ludek {
+        display: none;
+    }
+
+}
+#kot {
+
+   display: flex;
+   justify-content: center;
+}
+#kot img {
+    width: 100%;
+    padding: 1em;
+}
+.j-text {
+    text-align: justify;
+}
+
+p {
+    color: black;
+}
+
+#pricing {
+    margin-top: 2em;
+}
