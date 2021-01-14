@@ -328,6 +328,8 @@ footer {
       z-index: -1;
       width: 100vw;
       position: absolute;
+      min-height: 1000px;
+
   }
 .container {
     
