@@ -38,7 +38,6 @@
     </nav>
     <!-- Navigation end -->
   <!--Hero-unit-->
-
       <div class="hero-unit">
         <div class="container">
           <h1>Osiatkowania.pl</h1>
@@ -54,8 +53,60 @@
           </div>
         </div>
       </div>
+<!--Hero-unit-->
+<!--Gallery start-->
+<div id="gallery" class="container">
+  <h2>Galeria</h2>
+  <div class="gallery-con">
+      <div class="">
+        <img src="./img/thumbnails/1_thumbnail.jpg" onclick="openModal();currentSlide(1)"><!-- Small pictures -->
+      </div>
+      <div class="">
+        <img src="./img/thumbnails/2_thumbnail.jpg" onclick="openModal();currentSlide(2)"><!-- Small pictures -->
+      </div>
+      <div class="">
+        <img src="./img/thumbnails/3_thumbnail.jpg" onclick="openModal();currentSlide(3)"><!-- Small pictures -->
+      </div>
+      <div class="">
+        <img src="./img/thumbnails/4_thumbnail.jpg" onclick="openModal();currentSlide(4)"><!-- Small pictures -->
+      </div>
+  </div>
+</div>
 
+<div id="myModal" class="modal">
+  <span class="close">&#10006;</span>
+  <div class="modal-content">
 
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <!-- <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div> -->
+      <img src="./img/mini_galeria/1.jpg" style="width:100%"><!-- Big pictures -->
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./img/mini_galeria/2.jpg" style="width:100%"><!-- Big pictures -->
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./img/mini_galeria/3.jpg" style="width:100%"><!-- Big pictures -->
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./img/mini_galeria/4.jpg" style="width:100%"><!-- Big pictures -->
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>  
+<!--Gallery end-->
 <!-- Footer -->
 <footer class="bg-light text-center text-lg-start">
   <!-- Grid container -->
@@ -85,7 +136,6 @@
         </div>
       <!--Grid column-->
       <div class="mapa-strony col-lg-3 col-md-6 mb-4 mb-md-0">
- 
 
         <ul class="list-unstyled mb-0">
           <li>
@@ -131,6 +181,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
