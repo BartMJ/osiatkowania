@@ -84,6 +84,7 @@ footer {
 
 .container {
     background-color: rgb(255, 255, 255, 0);
+    /* background-image: url('./img/tiny_grid/tiny_grid.png'); */
 }
 
 #logo-con {
@@ -244,7 +245,9 @@ footer {
     display: flex;
     justify-content: end;
 }
-
+.button-con a {
+    text-decoration: none;
+}
 .button-con button {
     font-size: 14px;
 }
@@ -330,7 +333,7 @@ footer {
       bottom: 0;
       left: 0;
       right: 0;
-      
+      overflow: hidden;
       z-index:-1; /* Remove this line if it's not going to be a background! */
 
   }
@@ -504,12 +507,8 @@ p {
 #gallery {
     margin: 2em auto 2em auto;
 }
-.gallery-con {
+#gallery-con {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.gallery-con img {
-    padding: 0.5em;
 }
